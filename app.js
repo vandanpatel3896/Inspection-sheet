@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function() {
         element1 = document.getElementById("element1")
         
         var opt = {
-            margin: [1,1,1,1],
+            margin: [0.1,0.1,0.1,0.1],
             filename:     'HT_Inspection_Sheet.pdf',
             image:        { type: 'jpeg', quality: 0.98 },
             html2canvas:  { scale: 3, scrollY:0},
