@@ -96,6 +96,7 @@ input{
 .titlecol1 h1{
     margin-top: 5px;
     min-width: 100%;
+    text-wrap: nowrap;
     border-bottom: 2px solid rgb(248, 157, 19);
 }
 
