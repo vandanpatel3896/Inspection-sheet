@@ -87,7 +87,7 @@ input{
     display: flex;
 }
 .titlecol1{
-    width: 700px;
+    width: 100%;
 }
 
 .empty{
