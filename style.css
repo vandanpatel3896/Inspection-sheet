@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: "Noto Sans", sans-serif;
    
 }
 
@@ -28,7 +29,7 @@ body, html {
     padding: 0;
     /* width: 100%; */
     /* height: auto; */
-    font-size: 12pt; /* Adjust font size for print */
+    font-size: 10pt; /* Adjust font size for print */
     box-sizing: border-box;
 }
 
@@ -67,7 +68,7 @@ input, p, h1, h2, h3, h4, h5, h6 {
     margin-top: 5px;
     display: flex;
     align-items: center;
-    border: 2px solid rgb(248, 157, 19);  
+    border: 2px solid #464CA0;  
     min-height: 25px;
 }
 
@@ -96,7 +97,7 @@ input{
     margin-top: 5px;
     min-width: 100%;
     text-wrap: nowrap;
-    border-bottom: 2px solid rgb(248, 157, 19);
+    border-bottom: 2px solid #464CA0;
 }
 
 .titlecol1 h3{
@@ -107,12 +108,13 @@ input{
     flex-direction: column;
     width: 600px;
     text-align: right;
+    margin-top: 30px;
 
 }
 
 .titlecol2img img{
-    height: 25px;
-    width: 100px;
+    height: 45px;
+    width: 150px;
 }
 .titlecol2 p{
     font-size: 10px;
@@ -120,7 +122,7 @@ input{
 }
 
 #date {
-    border-right: 2px solid rgb(248, 157, 19);
+    border-right: 2px solid #464CA0;
     height: 25px;
     width: 50%;
     margin-left: 20px;
@@ -136,9 +138,9 @@ input{
 .line2{
     display: flex;
     align-items: center;
-    border-bottom: 2px solid rgb(248, 157, 19);
-    border-right: 2px solid rgb(248, 157, 19); 
-    border-left: 2px solid rgb(248, 157, 19);     
+    border-bottom: 2px solid #464CA0;
+    border-right: 2px solid #464CA0; 
+    border-left: 2px solid #464CA0;     
     height: 25px;
     width: 100%;
    
@@ -160,9 +162,9 @@ input{
 .line3{
     display: flex;
     align-items: center;
-    border-bottom: 2px solid rgb(248, 157, 19);
-    border-right: 2px solid rgb(248, 157, 19); 
-    border-left: 2px solid rgb(248, 157, 19);     
+    border-bottom: 2px solid #464CA0;
+    border-right: 2px solid #464CA0; 
+    border-left: 2px solid #464CA0;     
     min-height: 25px;
 }
 
@@ -174,16 +176,16 @@ input{
 .line4{
     display: flex;
     align-items: center;
-    border-bottom: 2px solid rgb(248, 157, 19);
-    border-right: 2px solid rgb(248, 157, 19); 
-    border-left: 2px solid rgb(248, 157, 19);     
+    border-bottom: 2px solid #464CA0;
+    border-right: 2px solid #464CA0; 
+    border-left: 2px solid #464CA0;     
     height: 25px;
 }
 
 #signcopy{
     display: flex;
     align-items: center;
-    border-right: 2px solid rgb(248, 157, 19);
+    border-right: 2px solid #464CA0;
     height: 25px;
     width: 50%;
     margin-left: 20px;
@@ -198,16 +200,16 @@ input{
 .line5{
     display: flex;
     align-items: center;
-    border-bottom: 2px solid rgb(248, 157, 19);
-    border-right: 2px solid rgb(248, 157, 19); 
-    border-left: 2px solid rgb(248, 157, 19);     
+    border-bottom: 2px solid #464CA0;
+    border-right: 2px solid #464CA0; 
+    border-left: 2px solid #464CA0;     
     height: 25px; 
 }
 
 #contactNumber{
     display: flex;
     align-items: center;
-    border-right: 2px solid rgb(248, 157, 19);
+    border-right: 2px solid #464CA0;
     height: 25px;
     width: 50%;
     margin-left: 20px;
@@ -234,8 +236,8 @@ input{
 }
 .module2col{
     display: flex;
-    border-left: 2px solid rgb(248, 157, 19); 
-    border-top: 2px solid rgb(248, 157, 19); 
+    border-left: 2px solid #464CA0; 
+    border-top: 2px solid #464CA0; 
 
 }
 
@@ -250,8 +252,8 @@ input{
     padding-left: 20px;
     width: 100%;
     min-height: 25px;
-    border-bottom: 2px solid rgb(248, 157, 19); 
-    border-right: 2px solid rgb(248, 157, 19);
+    border-bottom: 2px solid #464CA0; 
+    border-right: 2px solid #464CA0;
 }
 
 .m2col2{
@@ -269,9 +271,10 @@ input{
     padding-left: 20px;
     width: 100%;
     min-height: 25px;
-    border-bottom: 2px solid rgb(248, 157, 19); 
-    border-right: 2px solid rgb(248, 157, 19);
+    border-bottom: 2px solid #464CA0; 
+    border-right: 2px solid #464CA0;
 }
+
 .m2col3{
     width: 20%;
 }
@@ -288,20 +291,20 @@ input{
     
 }
 .module3col1{
-    border-top: 2px solid rgb(248, 157, 19);
-    border-left: 2px solid rgb(248, 157, 19);
-    border-right: 2px solid rgb(248, 157, 19);
+    border-top: 2px solid #464CA0;
+    border-left: 2px solid #464CA0;
+    border-right: 2px solid #464CA0;
     width: 50%;
 }
 
 .module3col2{
-    border-right: 2px solid rgb(248, 157, 19);
+    border-right: 2px solid #464CA0;
     width: 50%;
-    border-top: 2px solid rgb(248, 157, 19);
+    border-top: 2px solid #464CA0;
     width: 50%;
 }
 .module3element{
-    border-bottom: 2px solid rgb(248, 157, 19);
+    border-bottom: 2px solid #464CA0;
     display: flex;
     align-items: center;
     height:25px;
@@ -325,15 +328,15 @@ input{
     display: flex;
     flex-direction: column;
     margin-top: 10PX;
-    border-top: 2px solid rgb(248, 157, 19);
-    border-left: 2px solid rgb(248, 157, 19);
-    /* border-right: 2px solid rgb(248, 157, 19); */
+    border-top: 2px solid #464CA0;
+    border-left: 2px solid #464CA0;
+    /* border-right: 2px solid #464CA0; */
 
 }
 
 .module4l1{
-    border-bottom: 2px solid rgb(248, 157, 19);
-    border-right: 2px solid rgb(248, 157, 19);
+    border-bottom: 2px solid #464CA0;
+    border-right: 2px solid #464CA0;
 }
 
 .module4col2{
@@ -344,7 +347,7 @@ input{
     display: flex;
     flex-direction: column;
     width: 30%;
-    border-right: 2px solid rgb(248, 157, 19);
+    border-right: 2px solid #464CA0;
     
 }
 
@@ -366,26 +369,26 @@ input{
 }
 .m4col2,.m4col4{
     width: 20%;
-    border-right: 2px solid rgb(248, 157, 19);
+    border-right: 2px solid #464CA0;
 }
 
 .module4 h5{
     font-size: medium;
     height: 25px;
-    border-bottom: 2px solid rgb(248, 157, 19);
+    border-bottom: 2px solid #464CA0;
     text-align: center;
 }
 
 .module4 h6{
     font-size: medium;
     height: 25px;
-    border-bottom: 2px solid rgb(248, 157, 19);
+    border-bottom: 2px solid #464CA0;
     text-align: center;
 }
 .m4col1 P,.m4col3 P{
     padding-left: 20px;
     height: 25px;
-    border-bottom: 2px solid rgb(248, 157, 19);
+    border-bottom: 2px solid #464CA0;
 }
 
 .m4col2 input,.m4col4 input{
@@ -393,8 +396,53 @@ input{
     width: 100%;
     height: 25px;
     padding-left: 20px;
-    border-bottom: 2px solid rgb(248, 157, 19);
+    border-bottom: 2px solid #464CA0;
 }
+
+/* address */
+
+
+.module5_1{
+    width:95%;
+    text-align:center;
+    color:#3a347e;
+    font-family:Arial, sans-serif;
+    padding:4px 10px;
+    box-sizing:border-box;
+}
+
+.footer-company{
+    font-size:12px;
+    font-weight:bold;
+    margin-bottom:2px;
+}
+
+.footer-cin{
+    font-size:10px;
+    margin-bottom:2px;
+}
+
+.footer-address,
+.footer-contact,
+.footer-office{
+    font-size:9px;
+    line-height:1.2;
+    margin-bottom:2px;
+}
+
+.footer-office{
+    font-weight:bold;
+}
+
+.footer-bottom{
+    font-size:9px;
+    text-align:right;
+    margin-top:2px;
+    font-weight:normal;
+}
+
+
+/* adress end */
 .pagebreak{
     page-break-after: always;
 }
@@ -404,43 +452,44 @@ input{
 }
 .module5{
     display: flex;
-    border-left: 2px solid rgb(248, 157, 19);
+    border-left: 2px solid #464CA0;
     margin-top: 10px;
 }
 
 .m5col1,.m5col2,.m5col3,.m5col4{
     width: 25%;
-    border-right: 2px solid rgb(248, 157, 19);
-    border-top: 2px solid rgb(248, 157, 19);
+    border-right: 2px solid #464CA0;
+    border-top: 2px solid #464CA0;
 }
 .m5col1 div,.m5col3 div{
     display: flex;
     align-items: center;
     padding-left: 20px;
     height: 25px;
-    border-bottom: 2px solid rgb(248, 157, 19);
+    border-bottom: 2px solid #464CA0;
 }
 .m5col2 input,.m5col4 input{
     display: flex;
     align-items: center;
     padding-left: 20px;
+    width: 100%;
     height: 25px;
-    border-bottom: 2px solid rgb(248, 157, 19);
+    border-bottom: 2px solid #464CA0;
 }
 .module6{
     display: flex;
     flex-direction: column;
     margin-top: 10PX;
-    border-left: 2px solid rgb(248, 157, 19);
+    border-left: 2px solid #464CA0;
 }
 .m6l1{
     display: flex;
     align-items: center;
     padding-left: 20px;
     height: 25px;
-    border-top: 2px solid rgb(248, 157, 19);
-    border-bottom: 2px solid rgb(248, 157, 19);
-    border-right: 2px solid rgb(248, 157, 19);
+    border-top: 2px solid #464CA0;
+    border-bottom: 2px solid #464CA0;
+    border-right: 2px solid #464CA0;
     font-size: 25px;
 }
 
@@ -457,8 +506,8 @@ input{
 .m6col1 div,.m6col2 div,.m6col3 div,.m6col4 div{
     flex: 1;
     width: 100%;
-    border-bottom: 2px solid rgb(248, 157, 19);
-    border-right: 2px solid rgb(248, 157, 19);
+    border-bottom: 2px solid #464CA0;
+    border-right: 2px solid #464CA0;
 }
 
 .module6 p{
@@ -477,16 +526,16 @@ input{
     display: flex;
     flex-direction: column;
     margin-top: 10px;
-    border-left: 2px solid rgb(248, 157, 19);
-    border-top: 2px solid rgb(248, 157, 19);
+    border-left: 2px solid #464CA0;
+    border-top: 2px solid #464CA0;
 }
 
 .m8l1{
     display: flex;
     align-items: center;
     padding-left: 20px;
-    border-bottom: 2px solid rgb(248, 157, 19);
-    border-right: 2px solid rgb(248, 157, 19);
+    border-bottom: 2px solid #464CA0;
+    border-right: 2px solid #464CA0;
     height: 25px;
    
 }
@@ -497,7 +546,7 @@ input{
 
 .m8l2col1,.m8l2col2,.m8l2col3{
     width: 33.333%;
-    border-right: 2px solid rgb(248, 157, 19);
+    border-right: 2px solid #464CA0;
     
     
 }
@@ -509,7 +558,7 @@ input{
     align-items: center;
     width: 100%;
     height: 25px;
-    border-bottom: 2px solid rgb(248, 157, 19);     
+    border-bottom: 2px solid #464CA0;     
 }
 
 .m8l2col1 input, .m8l2col3 input{
@@ -525,7 +574,7 @@ input{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 2px solid rgb(248, 157, 19);
+    border-bottom: 2px solid #464CA0;
 }
 
 .m8l2 h6{
@@ -535,15 +584,15 @@ input{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 2px solid rgb(248, 157, 19);
+    border-bottom: 2px solid #464CA0;
     font-size: 16px;
 }
 .module7{
     display: flex;
     flex-direction: column;
     margin-top: 10px;
-    border-top: 2px solid rgb(248, 157, 19);
-    border-left: 2px solid rgb(248, 157, 19);
+    border-top: 2px solid #464CA0;
+    border-left: 2px solid #464CA0;
 }
 .m7l1{
     display: flex;
@@ -551,33 +600,37 @@ input{
     font-size: 25px;
     padding-left: 20px;
     height: 25px;
-    border-bottom: 2px solid rgb(248, 157, 19);
-    border-right: 2px solid rgb(248, 157, 19);
+    border-bottom: 2px solid #464CA0;
+    border-right: 2px solid #464CA0;
 
 }
-
-
 
 .m7l2{
-    display: flex;
-    border-bottom: 2px solid rgb(248, 157, 19);
+    display:flex;
+    border-bottom:2px solid #464CA0;
 }
-.m7l2 div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 25px;
-    border-right: 2px solid rgb(248, 157, 19);
-    justify-content: space-evenly;
+
+.m7l2 div:first-child{
+    width:25%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-right:2px solid #464CA0;
 }
+
+.m7l2 div:last-child{
+    width:75%;
+    display:flex;
+    align-items:center;
+    border-right:2px solid #464CA0;
+}
+
 .m7l2 input{
-    flex: 1;
-    width: 100%;
-    height: 100%;
+    padding-left:20px;
+    width:100%;
+    height: 25px;
 }
-.m7l2 p{
-    white-space: nowrap;
-}
+
 #acc{
     width: 20%;
 }
@@ -585,15 +638,15 @@ input{
     display: flex;
     flex-direction: column;
     margin-top: 10px;
-    border-top: 2px solid rgb(248, 157, 19);
-    border-left: 2px solid rgb(248, 157, 19);
-    border-right: 2px solid rgb(248, 157, 19);
+    border-top: 2px solid #464CA0;
+    border-left: 2px solid #464CA0;
+    border-right: 2px solid #464CA0;
 }
 .module9 div{
     display: flex;
     align-items: center;
     padding-left: 20px;
-    border-bottom: 2px solid rgb(248, 157, 19);
+    border-bottom: 2px solid #464CA0;
     height: 25px; 
     font-size: 20px;
 }
@@ -601,6 +654,27 @@ input{
     flex: 1;
     height: 100%;
 }
+
+.module10{
+    width:95%;
+    text-align:center;
+    color:#3a347e;
+    font-family: "Noto Sans", sans-serif;
+    /* padding:4px 10px; */
+    box-sizing:border-box;
+}
+
+.footer-cin1{
+    font-size:10px;
+    margin-bottom:2px;
+}
+
+.footer-address1{
+    font-size:9px;
+    line-height:1.2;
+    margin-bottom:2px;
+}
+
 
 .cust_authority,.company_authority{
     margin-top: 10px;
@@ -612,16 +686,16 @@ canvas{
     flex:1;
     width: 100%;
     touch-action: none;
-    border: 2px solid rgb(248, 157, 19);
+    border: 2px solid #464CA0;
     
 }
 
 .signArea{
     display: flex;
     margin-top: 10px;
-    border-left: 2px solid rgb(248, 157, 19);
-    border-bottom: 2px solid rgb(248, 157, 19);
-    margin-bottom: 50px;  
+    border-left: 2px solid #464CA0;
+    border-bottom: 2px solid #464CA0;
+    margin-bottom: 5px;  
 }
 
 
@@ -631,16 +705,23 @@ canvas{
     height: 180px;
     align-items: center;
     width: 50%;
-    border-right: 2px solid rgb(248, 157, 19);
-    border-top: 2px solid rgb(248, 157, 19);
+    border-right: 2px solid #464CA0;
+    border-top: 2px solid #464CA0;
 
 }
 
+#m2Signature1{
+    width:100%;
+    height:22px;
+    border:none;
+}
 #customersign,#officerSign{ 
-  width: 300px; 
-  height: 120px; 
+  width: 10px; 
+  height: 10px; 
   flex: 0 0 auto;         
 }
+
+
 .button{
     display: flex;
     justify-content: center;
@@ -651,7 +732,7 @@ canvas{
 .button button{
     width: 100px;
     height: 30px;
-    background-color: rgb(248, 157, 19);
+    background-color: #464CA0;
     box-shadow: 4px 0px 4px rgba(51, 50, 49, 0.25),-4px 0px 4px rgba(51, 50, 49, 0.25),0px 4px 4px rgba(51, 50, 49, 0.25),0px -4px 4px rgba(51, 50, 49, 0.25);    
     text-align: center;  
     border-radius: 10px;
@@ -667,7 +748,7 @@ canvas{
 .resetbutton button{
     width: 100px;
     height: 30px;
-    background-color: rgb(248, 157, 19);
+    background-color: #464CA0;
     box-shadow: 4px 0px 4px rgba(51, 50, 49, 0.25),-4px 0px 4px rgba(51, 50, 49, 0.25),0px 4px 4px rgba(51, 50, 49, 0.25),0px -4px 4px rgba(51, 50, 49, 0.25);    
     text-align: center;  
     border-radius: 10px;
@@ -686,7 +767,7 @@ canvas{
 .signature-buttons button {
     width: 200px;
     height: 30px;
-    background-color: rgb(248, 157, 19);
+    background-color: #464CA0;
     box-shadow: 4px 0px 4px rgba(51, 50, 49, 0.25),-4px 0px 4px rgba(51, 50, 49, 0.25),0px 4px 4px rgba(51, 50, 49, 0.25),0px -4px 4px rgba(51, 50, 49, 0.25);    
     text-align: center;  
     border-radius: 10px;
