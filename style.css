@@ -29,7 +29,7 @@ body, html {
     padding: 0;
     /* width: 100%; */
     /* height: auto; */
-    font-size: 10pt; /* Adjust font size for print */
+    font-size: 9pt; /* Adjust font size for print */
     box-sizing: border-box;
 }
 
@@ -69,7 +69,7 @@ input, p, h1, h2, h3, h4, h5, h6 {
     display: flex;
     align-items: center;
     border: 2px solid #464CA0;  
-    min-height: 25px;
+    min-height: 22px;
 }
 
 .inputboxes{
@@ -117,13 +117,13 @@ input{
     width: 150px;
 }
 .titlecol2 p{
-    font-size: 10px;
+    font-size: 9px;
     text-align: right;
 }
 
 #date {
     border-right: 2px solid #464CA0;
-    height: 25px;
+    height: 22px;
     width: 50%;
     margin-left: 20px;
     gap: 20px;  
@@ -141,7 +141,7 @@ input{
     border-bottom: 2px solid #464CA0;
     border-right: 2px solid #464CA0; 
     border-left: 2px solid #464CA0;     
-    height: 25px;
+    height: 22px;
     width: 100%;
    
 }
@@ -165,12 +165,13 @@ input{
     border-bottom: 2px solid #464CA0;
     border-right: 2px solid #464CA0; 
     border-left: 2px solid #464CA0;     
-    min-height: 25px;
+    min-height: 22px;
 }
 
 .line3 p{
     margin-left: 20px;
     gap: 20px;
+    font-size: 7px;
 }
 
 .line4{
@@ -179,14 +180,14 @@ input{
     border-bottom: 2px solid #464CA0;
     border-right: 2px solid #464CA0; 
     border-left: 2px solid #464CA0;     
-    height: 25px;
+    height: 22px;
 }
 
 #signcopy{
     display: flex;
     align-items: center;
     border-right: 2px solid #464CA0;
-    height: 25px;
+    height: 22px;
     width: 50%;
     margin-left: 20px;
     gap: 20px; 
@@ -203,14 +204,14 @@ input{
     border-bottom: 2px solid #464CA0;
     border-right: 2px solid #464CA0; 
     border-left: 2px solid #464CA0;     
-    height: 25px; 
+    height: 22px; 
 }
 
 #contactNumber{
     display: flex;
     align-items: center;
     border-right: 2px solid #464CA0;
-    height: 25px;
+    height: 22px;
     width: 50%;
     margin-left: 20px;
     gap: 20px; 
@@ -251,7 +252,7 @@ input{
     flex: 1;
     padding-left: 20px;
     width: 100%;
-    min-height: 25px;
+    min-height: 22px;
     border-bottom: 2px solid #464CA0; 
     border-right: 2px solid #464CA0;
 }
@@ -270,7 +271,7 @@ input{
     justify-content: center;
     padding-left: 20px;
     width: 100%;
-    min-height: 25px;
+    min-height: 22px;
     border-bottom: 2px solid #464CA0; 
     border-right: 2px solid #464CA0;
 }
@@ -307,7 +308,7 @@ input{
     border-bottom: 2px solid #464CA0;
     display: flex;
     align-items: center;
-    height:25px;
+    height:22px;
 }
 
 .module3element p{
@@ -374,27 +375,27 @@ input{
 
 .module4 h5{
     font-size: medium;
-    height: 25px;
+    height: 22px;
     border-bottom: 2px solid #464CA0;
     text-align: center;
 }
 
 .module4 h6{
     font-size: medium;
-    height: 25px;
+    height: 22px;
     border-bottom: 2px solid #464CA0;
     text-align: center;
 }
 .m4col1 P,.m4col3 P{
     padding-left: 20px;
-    height: 25px;
+    height: 22px;
     border-bottom: 2px solid #464CA0;
 }
 
 .m4col2 input,.m4col4 input{
     flex: 1;
     width: 100%;
-    height: 25px;
+    height: 22px;
     padding-left: 20px;
     border-bottom: 2px solid #464CA0;
 }
@@ -412,22 +413,22 @@ input{
 }
 
 .footer-company{
-    font-size:12px;
+    font-size:7px;
     font-weight:bold;
-    margin-bottom:2px;
+    margin-bottom:1px;
 }
 
 .footer-cin{
-    font-size:10px;
-    margin-bottom:2px;
+    font-size:7px;
+    margin-bottom:1px;
 }
 
 .footer-address,
 .footer-contact,
 .footer-office{
-    font-size:9px;
+    font-size:7px;
     line-height:1.2;
-    margin-bottom:2px;
+    margin-bottom:1px;
 }
 
 .footer-office{
@@ -435,9 +436,9 @@ input{
 }
 
 .footer-bottom{
-    font-size:9px;
+    font-size:7px;
     text-align:right;
-    margin-top:2px;
+    margin-top:1px;
     font-weight:normal;
 }
 
@@ -465,7 +466,7 @@ input{
     display: flex;
     align-items: center;
     padding-left: 20px;
-    height: 25px;
+    height: 22px;
     border-bottom: 2px solid #464CA0;
 }
 .m5col2 input,.m5col4 input{
@@ -473,7 +474,7 @@ input{
     align-items: center;
     padding-left: 20px;
     width: 100%;
-    height: 25px;
+    height: 22px;
     border-bottom: 2px solid #464CA0;
 }
 .module6{
@@ -486,11 +487,11 @@ input{
     display: flex;
     align-items: center;
     padding-left: 20px;
-    height: 25px;
+    height: 22px;
     border-top: 2px solid #464CA0;
     border-bottom: 2px solid #464CA0;
     border-right: 2px solid #464CA0;
-    font-size: 25px;
+    font-size: 16px;
 }
 
 .m6l2{
@@ -511,14 +512,14 @@ input{
 }
 
 .module6 p{
-    height: 25px;
+    height: 22px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .module6 input{
-    height: 25px;
+    height: 22px;
     padding-left: 20px;
 
 }
@@ -536,7 +537,7 @@ input{
     padding-left: 20px;
     border-bottom: 2px solid #464CA0;
     border-right: 2px solid #464CA0;
-    height: 25px;
+    height: 22px;
    
 }
 
@@ -557,7 +558,7 @@ input{
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 25px;
+    height: 22px;
     border-bottom: 2px solid #464CA0;     
 }
 
@@ -570,7 +571,7 @@ input{
 .m8l2 p{
     flex: 1;
     width: 100%;
-    height: 25px;
+    height: 22px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -580,7 +581,7 @@ input{
 .m8l2 h6{
     flex: 1;
     width: 100%;
-    height: 25px;
+    height: 22px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -597,9 +598,9 @@ input{
 .m7l1{
     display: flex;
     align-items: center;
-    font-size: 25px;
+    font-size: 16px;
     padding-left: 20px;
-    height: 25px;
+    height: 22px;
     border-bottom: 2px solid #464CA0;
     border-right: 2px solid #464CA0;
 
@@ -628,7 +629,7 @@ input{
 .m7l2 input{
     padding-left:20px;
     width:100%;
-    height: 25px;
+    height: 22px;
 }
 
 #acc{
@@ -647,8 +648,8 @@ input{
     align-items: center;
     padding-left: 20px;
     border-bottom: 2px solid #464CA0;
-    height: 25px; 
-    font-size: 20px;
+    height: 22px; 
+    font-size: 9px;
 }
 .module9 input{
     flex: 1;
@@ -665,14 +666,14 @@ input{
 }
 
 .footer-cin1{
-    font-size:10px;
-    margin-bottom:2px;
+    font-size:7px;
+    margin-bottom:1px;
 }
 
 .footer-address1{
-    font-size:9px;
+    font-size:7px;
     line-height:1.2;
-    margin-bottom:2px;
+    margin-bottom:1px;
 }
 
 
