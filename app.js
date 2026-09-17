@@ -5,11 +5,11 @@ function initHiDPICanvas(canvas, cssWidthPx, cssHeightPx) {
   const dpr = window.devicePixelRatio || 1;
 
   // Backing store (internal pixels)
-  canvas.width  = Math.round(cssWidthPx * dpr);
+  canvas.width = Math.round(cssWidthPx * dpr);
   canvas.height = Math.round(cssHeightPx * dpr);
 
   // Display size (CSS pixels)
-  canvas.style.width  = cssWidthPx + "px";
+  canvas.style.width = cssWidthPx + "px";
   canvas.style.height = cssHeightPx + "px";
 
   const ctx = canvas.getContext("2d");
@@ -62,7 +62,7 @@ function clearFormContents() {
 document.addEventListener("DOMContentLoaded", function () {
   // Inline canvases (previews only; no direct drawing!)
   const customerSignCanvas = document.getElementById("customersign");
-  const officerSignCanvas  = document.getElementById("officerSign");
+  const officerSignCanvas = document.getElementById("officerSign");
 
   // Match these numbers with your CSS sizes
   initHiDPICanvas(customerSignCanvas, 300, 120);
@@ -74,9 +74,23 @@ document.addEventListener("DOMContentLoaded", function () {
   const btnPdf = document.getElementById("generatePdfButton");
   btnPdf.addEventListener("click", function () {
     const element1 = document.getElementById("element1");
+    // Get Customer ID
+    const customerId =
+      document.querySelector("#custID input").value.trim() || "UNKNOWN";
+
+    // Current date in YYYYMMDD format
+    const today = new Date();
+    const formattedDate =
+      today.getFullYear().toString() +
+      String(today.getMonth() + 1).padStart(2, "0") +
+      String(today.getDate()).padStart(2, "0");
+
+    // Filename: CustomerID_YYYYMMDD.pdf
+    const pdfFileName = `${customerId}_${formattedDate}.pdf`;
+
     const opt = {
       margin: [10, 10, 10, 10],
-      filename: "HT_Inspection_Sheet.pdf",
+      filename: pdfFileName,
       image: { type: "jpeg", quality: 0.98 },
       html2canvas: { scale: 3, scrollY: 0 },
       jsPDF: { unit: "mm", format: "letter", orientation: "portrait" },
@@ -104,17 +118,17 @@ document.addEventListener("DOMContentLoaded", function () {
   // ======================
   // Modal signature setup
   // ======================
-  const modal       = document.getElementById("signatureModal");
-  const fullCanvas  = document.getElementById("sigFullCanvas");
-  const fullCtx     = fullCanvas.getContext("2d");
+  const modal = document.getElementById("signatureModal");
+  const fullCanvas = document.getElementById("sigFullCanvas");
+  const fullCtx = fullCanvas.getContext("2d");
 
   const btnOpenCustomer = document.getElementById("openCustomerSign");
-  const btnOpenOfficer  = document.getElementById("openOfficerSign");
-  const btnClose        = document.getElementById("sigCloseBtn");
-  const btnCancel       = document.getElementById("sigCancelBtn");
-  const btnSave         = document.getElementById("sigSaveBtn");
-  const btnClear        = document.getElementById("sigClearBtn");
-  const titleEl         = document.getElementById("sigModalTitle");
+  const btnOpenOfficer = document.getElementById("openOfficerSign");
+  const btnClose = document.getElementById("sigCloseBtn");
+  const btnCancel = document.getElementById("sigCancelBtn");
+  const btnSave = document.getElementById("sigSaveBtn");
+  const btnClear = document.getElementById("sigClearBtn");
+  const titleEl = document.getElementById("sigModalTitle");
 
   // Target inline canvas for Save
   let targetInlineCanvas = null;
@@ -136,7 +150,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const rect = fullCanvas.getBoundingClientRect();
     const dpr = window.devicePixelRatio || 1;
 
-    fullCanvas.width  = Math.floor(rect.width  * dpr);
+    fullCanvas.width = Math.floor(rect.width * dpr);
     fullCanvas.height = Math.floor(rect.height * dpr);
 
     fullCtx.setTransform(dpr, 0, 0, dpr, 0, 0);
@@ -298,6 +312,8 @@ document.addEventListener("DOMContentLoaded", function () {
       return;
     }
 
+
+
     // Compute bounds of all points in modal CSS coordinates
     let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
     strokes.forEach(stroke => {
@@ -347,7 +363,6 @@ document.addEventListener("DOMContentLoaded", function () {
     // Restore CSS-pixel transform for any future overlays (optional)
     const dpr = window.devicePixelRatio || 1;
     tCtx.setTransform(dpr, 0, 0, dpr, 0, 0);
-
     closeSignatureModal();
   });
 
@@ -375,12 +390,12 @@ document.addEventListener("DOMContentLoaded", function () {
   // Modal canvas draw listeners
   fullCanvas.addEventListener("mousedown", modalStart);
   fullCanvas.addEventListener("mousemove", modalMove);
-  fullCanvas.addEventListener("mouseup",   modalEnd);
-  fullCanvas.addEventListener("mouseout",  modalEnd);
+  fullCanvas.addEventListener("mouseup", modalEnd);
+  fullCanvas.addEventListener("mouseout", modalEnd);
 
   fullCanvas.addEventListener("touchstart", modalStart, { passive: false });
-  fullCanvas.addEventListener("touchmove",  modalMove,  { passive: false });
-  fullCanvas.addEventListener("touchend",   modalEnd,   { passive: false });
+  fullCanvas.addEventListener("touchmove", modalMove, { passive: false });
+  fullCanvas.addEventListener("touchend", modalEnd, { passive: false });
 
   // Resize while modal is open
   window.addEventListener("resize", () => {
@@ -403,4 +418,3 @@ window.addEventListener("beforeunload", function (e) {
   e.preventDefault();
   e.returnValue = ""; // Required for Chrome, Edge, Firefox
 });
-``
